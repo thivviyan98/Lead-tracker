@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "My search",
+  "version": "1.0",
+  "description": "My search",
+  "permissions": [
+    "activeTab"
+  ],
+"content_scripts": [
+  {
+    "matches": ["https://www.google.com/*"],
+    "js": ["content.js"]
+  }
+],
+
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_action": "index.html"
+  }
+}
